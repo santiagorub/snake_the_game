@@ -8,19 +8,19 @@
     "net9.0": []
   },
   "packageFolders": {
-    "C:\\Users\\santi\\.nuget\\packages\\": {}
+    "C:\\Users\\tobiv\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\progra1\\snake_the_game\\snake_the_game.csproj",
+      "projectUniqueName": "C:\\snake_the_game\\snake_the_game\\snake_the_game.csproj",
       "projectName": "snake_the_game",
-      "projectPath": "C:\\progra1\\snake_the_game\\snake_the_game.csproj",
-      "packagesPath": "C:\\Users\\santi\\.nuget\\packages\\",
-      "outputPath": "C:\\progra1\\snake_the_game\\obj\\",
+      "projectPath": "C:\\snake_the_game\\snake_the_game\\snake_the_game.csproj",
+      "packagesPath": "C:\\Users\\tobiv\\.nuget\\packages\\",
+      "outputPath": "C:\\snake_the_game\\snake_the_game\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\santi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\tobiv\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -46,7 +46,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.300"
+      "SdkAnalysisLevel": "10.0.200"
     },
     "frameworks": {
       "net9.0": {
@@ -67,7 +67,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.312/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
