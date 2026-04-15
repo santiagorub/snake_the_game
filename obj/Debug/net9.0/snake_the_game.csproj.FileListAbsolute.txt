@@ -1,0 +1,15 @@
+C:\progra1\snake_the_game\bin\Debug\net9.0\snake_the_game.exe
+C:\progra1\snake_the_game\bin\Debug\net9.0\snake_the_game.deps.json
+C:\progra1\snake_the_game\bin\Debug\net9.0\snake_the_game.runtimeconfig.json
+C:\progra1\snake_the_game\bin\Debug\net9.0\snake_the_game.dll
+C:\progra1\snake_the_game\bin\Debug\net9.0\snake_the_game.pdb
+C:\progra1\snake_the_game\obj\Debug\net9.0\snake_the_game.GeneratedMSBuildEditorConfig.editorconfig
+C:\progra1\snake_the_game\obj\Debug\net9.0\snake_the_game.AssemblyInfoInputs.cache
+C:\progra1\snake_the_game\obj\Debug\net9.0\snake_the_game.AssemblyInfo.cs
+C:\progra1\snake_the_game\obj\Debug\net9.0\snake_the_game.csproj.CoreCompileInputs.cache
+C:\progra1\snake_the_game\obj\Debug\net9.0\snake_the_game.sourcelink.json
+C:\progra1\snake_the_game\obj\Debug\net9.0\snake_the_game.dll
+C:\progra1\snake_the_game\obj\Debug\net9.0\refint\snake_the_game.dll
+C:\progra1\snake_the_game\obj\Debug\net9.0\snake_the_game.pdb
+C:\progra1\snake_the_game\obj\Debug\net9.0\snake_the_game.genruntimeconfig.cache
+C:\progra1\snake_the_game\obj\Debug\net9.0\ref\snake_the_game.dll

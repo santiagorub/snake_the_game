@@ -1,9 +1,11 @@
-﻿namespace snake_the_game;
+﻿using snake_the_game.controllers;
 
+namespace snake_the_game;
 class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello, World!");
+        nSnake juego = new nSnake();
+        juego.IniciarJuego();
     }
 }
