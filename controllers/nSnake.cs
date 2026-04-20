@@ -9,7 +9,7 @@ namespace snake_the_game.controllers
     class nSnake
     {
         //medidas de donde se mueve la serpiente
-        private int ancho = 70;
+        private int ancho = 50;
         private int alto = 15; //min 12 porque sino empieza a fallar ya que la consola de windows tiene un minimo permitido
 
         nComida controladorComida = new nComida();
@@ -120,9 +120,11 @@ namespace snake_the_game.controllers
         private void GameOver()
         {
             Console.Clear();
+            Console.ForegroundColor = ConsoleColor.Red;
             Console.SetCursorPosition(ancho / 2 - 5, alto / 2);
-            Console.Write("Game Over");
+            Console.Write("Game Over!!!");
             Console.SetCursorPosition(ancho - 5, alto);
+            Console.ResetColor();
             Console.WriteLine("\nToca cuaqueri letra para salir...");
             Console.ReadKey(true); //si pongo false la letra aparece en pantalla y no quiero eso.
         }
