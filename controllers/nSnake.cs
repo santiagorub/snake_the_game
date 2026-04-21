@@ -82,6 +82,10 @@ namespace snake_the_game.controllers
                 Thread.Sleep(150); //velocidad del juego
             }
             GameOver();
+            ImprimirPuntajes(snake);
+    
+            Console.WriteLine("\nPresiona cualquier tecla para cerrar...");
+            Console.ReadKey(true);
         }
 
         private void DibujarSerpiente(Snake snake)
@@ -133,8 +137,79 @@ namespace snake_the_game.controllers
             Console.Write("Game Over!!!");
             Console.SetCursorPosition(ancho - 5, alto);
             Console.ResetColor();
-            Console.WriteLine("\nToca cuaqueri letra para salir...");
+            Console.WriteLine("\nToca cualquier tecla para ir a la tabla...");
             Console.ReadKey(true); //si pongo false la letra aparece en pantalla y no quiero eso.
+        }
+        
+        public void ImprimirPuntajes(Snake snake)
+        {
+            Console.Clear();
+            Console.ResetColor();
+
+            int puntajeFinal = snake.Cuerpo.Count - 1; 
+
+            string[,] tablaResultados = new string[2, 2];
+
+            // Fila 0: Títulos
+            tablaResultados[0, 0] = "Concepto";
+            tablaResultados[0, 1] = "Detalle";
+
+            // Fila 1: Datos de la partida
+            tablaResultados[1, 0] = "Puntaje Total";
+            tablaResultados[1, 1] = puntajeFinal.ToString() + " pts";
+
+            DibujaTabla(tablaResultados);
+        }
+        private void DibujaTabla(string[,] matriz)
+        {
+            int filas = matriz.GetLength(0);
+            int columnas = matriz.GetLength(1);
+
+            int[] anchos = new int[columnas];
+            for (int c = 0; c < columnas; c++)
+            {
+                for (int f = 0; f < filas; f++)
+                {
+                    if (matriz[f, c].Length > anchos[c])
+                        anchos[c] = matriz[f, c].Length;
+                }
+                anchos[c] += 2;
+            }
+
+            // Dibujo de la tabla
+            for (int f = 0; f < filas; f++)
+            {    
+                // Línea superior de la fila
+                ImprimirLineaBorde(anchos);
+
+                for (int c = 0; c < columnas; c++)
+                {
+                    Console.Write("║"); // Borde vertical
+
+                    if (f == 0) // Si es la fila de títulos
+                    {
+                        Console.ForegroundColor = ConsoleColor.Yellow; // Color de títulos
+                        Console.Write($" {matriz[f, c].PadRight(anchos[c] - 1)}");
+                        Console.ResetColor();
+                    }
+                    else
+                    {
+                        Console.Write($" {matriz[f, c].PadRight(anchos[c] - 1)}");
+                    }
+                }
+                Console.WriteLine("║");
+            }
+            // Línea de cierre final
+            ImprimirLineaBorde(anchos);
+        }
+    
+        private void ImprimirLineaBorde(int[] anchos)
+        {
+            foreach (int ancho in anchos)
+            {
+                Console.Write("╬" + new string('═', ancho));
+            }
+            Console.WriteLine("╬");
         }
     }
 }
