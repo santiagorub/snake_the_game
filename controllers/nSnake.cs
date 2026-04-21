@@ -52,12 +52,13 @@ namespace snake_the_game.controllers
 
                 snake.Mover();
 
-                //colision con el cuerpo
+                 //colision con el cuerpo
                 if (snake.CochoConSiMisma())
                 {
                     juegoFunca = false; //el juego termina
                     break;
                 }
+
 
                 //para comprobar cuando la cabeza choca con los bordes
                 var cabeza = snake.ObtenerCabeza();
