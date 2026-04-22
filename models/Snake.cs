@@ -51,5 +51,18 @@ namespace snake_the_game.models
             var cabeza = ObtenerCabeza();
             Cuerpo.Insert(0, cabeza); //duplica la cabeza y la cola no se elimina en el proximo movimiento
         }
+        public bool ChocoConSiMisma() //para ver si la serpiente choca con propiosucuerpo
+        {
+            var cabeza = ObtenerCabeza();
+
+            for (int i = 1; i < Cuerpo.Count; i++)
+            {
+                if(Cuerpo[i].x == cabeza.x && Cuerpo[i].y == cabeza.y)
+                {
+                    return true; //la serpiente choca con su cuerpo
+                }
+            }
+            return false; //no hay colision con el cuerpo
+        }
     }
 }

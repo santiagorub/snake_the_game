@@ -15,8 +15,8 @@ public class Menu
             switch (opcion)
             {
                 case 0:
-                    Console.WriteLine("Jugar");
-                    Console.ReadKey();
+                    var juego = new snake_the_game.controllers.nSnake();
+                    juego.IniciarJuego();
                     break;
 
                 case 1:
